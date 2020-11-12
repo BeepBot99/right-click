@@ -10,6 +10,18 @@ var menu = new rightClickMenu(elem);
 ## Edit the options
 ```js
 menu.contextMenu = [
-  {type:"url",}
-];
+      {
+        type:"url",
+        value:"https://example.com",
+        text:"URL"
+      },
+      {
+        type:"javascript",
+        value:"alert('Hello, World!')",
+        text:"Javascript"
+      },
+      {
+        type:"hr"
+      }
+    ];
 ```
