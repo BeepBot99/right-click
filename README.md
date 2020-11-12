@@ -27,4 +27,4 @@ menu.contextMenu = [
 ```
 >If not specified, will be set to the default (Shown above)
 ## Debuging with the console
->By default, all progress will be sent to the console. This is useful for debuging. To turn this off, use `menu.`
+>By default, all progress will be sent to the console. This is useful for debuging. To turn this off, use `menu.consoleDebug = "false"`
