@@ -25,3 +25,4 @@ menu.contextMenu = [
       }
     ];
 ```
+>If not specified, will be set to the default (Shown above)
