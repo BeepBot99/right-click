@@ -7,3 +7,7 @@
 var menu = new rightClickMenu(elem);
 // elem = Element to detect right click. Leave blank for body.
 ```
+## Edit the options
+```js
+menu.
+```
