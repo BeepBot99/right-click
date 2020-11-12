@@ -1,3 +1,5 @@
 class rightClickMenu {
-
+  constructor(elem) {
+    
+  }
 }
