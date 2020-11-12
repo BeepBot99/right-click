@@ -9,5 +9,7 @@ var menu = new rightClickMenu(elem);
 ```
 ## Edit the options
 ```js
-menu.
+menu.contextMenu = [
+  {type:"url",}
+];
 ```
