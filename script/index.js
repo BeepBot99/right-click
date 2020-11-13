@@ -25,8 +25,8 @@ class rightClickMenu {
   }
  activate() {
    this.enabled = "custom";
-   window.addEventListener('contextmenu', function (e) { 
-  // do something here... 
+   this.element.addEventListener('contextmenu', function (e) { 
+   
   e.preventDefault(); 
 }, false);
   }
