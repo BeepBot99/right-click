@@ -1,6 +1,7 @@
 class rightClickMenu {
   constructor(elem) {
     this.consoleDebug = true;
+    this.enabled = "custom";
     this.contextMenu = [
       {
         type:"url",
@@ -17,8 +18,13 @@ class rightClickMenu {
       }
     ];
   }
- open() {
+ activate() {
+   this.enabled = "custom";
   }
- close() {
-  }
+ disactivate() {
+   this.enabled = "none";
+ }
+default() {
+this.enabled = "default";
+}
 }
