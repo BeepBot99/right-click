@@ -1,5 +1,10 @@
 class rightClickMenu {
   constructor(elem) {
+    if (elem) {
+      this.element = (document.getElementById(elem) || elem); 
+    } else {
+      this.element = document.body;
+    }
     this.consoleDebug = true;
     this.enabled = "custom";
     this.contextMenu = [
@@ -20,6 +25,10 @@ class rightClickMenu {
   }
  activate() {
    this.enabled = "custom";
+   window.addEventListener('contextmenu', function (e) { 
+  // do something here... 
+  e.preventDefault(); 
+}, false);
   }
  disactivate() {
    this.enabled = "none";
