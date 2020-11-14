@@ -1,3 +1,4 @@
+console.log("Right click menus powered by right-click");
 class rightClickMenu {
   constructor(elem) {
     if (elem) {
@@ -5,6 +6,7 @@ class rightClickMenu {
     } else {
       this.element = document.body;
     }
+  
     this.consoleDebug = true;
     this.enabled = "custom";
     this.contextMenu = [
@@ -26,8 +28,9 @@ class rightClickMenu {
  activate() {
    this.enabled = "custom";
    this.element.addEventListener('contextmenu', function (e) { 
-   
-  e.preventDefault(); 
+     e.preventDefault(); 
+     this.debug("Activating...");
+     
 }, false);
   }
  disactivate() {
@@ -39,6 +42,14 @@ this.enabled = "default";
   debug(args) {
     if (this.consoleDebug === true) {
       console.log(args);
+    }
+  }
+  build() {
+    let menuElmt = document.createElement("div");
+    menuElmt.style.display = "none";
+    for (let i = 0; i < this.contextMenu.length; i++)
+    {
+      
     }
   }
 }
