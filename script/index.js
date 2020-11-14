@@ -49,7 +49,11 @@ this.enabled = "default";
     menuElmt.style.display = "none";
     for (let i = 0; i < this.contextMenu.length; i++)
     {
-      
+      let item;
+      if (this.contextMenu[i].type === "url") {
+        item = `<a href="${this.contextMenu[i].value}">${this.contextMenu[i].text}</a>`;
+      } else if (this.contextMenu[i].type = "javascript") {
+        item = `<a href="javascript:void(0)" onclick="${this.contextMenu[i].
     }
   }
 }
