@@ -29,5 +29,5 @@ menu.contextMenu = [
 >By default, all progress will be sent to the console. This is useful for debuging. To turn this off, use `menu.consoleDebug = "false"`.   
 ## Disactivation
 >By default, your custom menu is enabled. To use the default, use `menu.default()` or `menu.enabled = "default"`.  
->To switch back, use `menu.enable()` or `menu.enabled = "custom"`.  
->To disable all context menus, use `menu.disable()` or `menu.enabled = "none"`.
+>To switch back, use `menu.activate()` or `menu.enabled = "custom"`.  
+>To disable all context menus, use `menu.disactivate()` or `menu.enabled = "none"`.
