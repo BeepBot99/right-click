@@ -36,4 +36,9 @@ class rightClickMenu {
 default() {
 this.enabled = "default";
 }
+  debug(args) {
+    if (this.consoleDebug === true) {
+      console.log(args);
+    }
+  }
 }
