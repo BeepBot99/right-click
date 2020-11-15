@@ -46,6 +46,11 @@ this.enabled = "default";
   }
   build() {
     let menuElmt = document.createElement("div");
+    let headElmt = document.getElementsByTagName("head")[0];
+    let contextMenuStyles = document.createElement("style");
+    contextMenuStyles.innerHTML = "
+      .
+    ";
     menuElmt.style.display = "none";
     for (let i = 0; i < this.contextMenu.length; i++)
     {
