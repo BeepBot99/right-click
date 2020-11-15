@@ -49,7 +49,11 @@ this.enabled = "default";
     let headElmt = document.getElementsByTagName("head")[0];
     let contextMenuStyles = document.createElement("style");
     contextMenuStyles.innerHTML = "
-      .
+      .cnxtMenuLnk {
+        display: block;
+        padding: 20px;
+        background-color: 
+      }
     ";
     menuElmt.style.display = "none";
     for (let i = 0; i < this.contextMenu.length; i++)
