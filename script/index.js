@@ -53,7 +53,10 @@ this.enabled = "default";
       if (this.contextMenu[i].type === "url") {
         item = `<a href="${this.contextMenu[i].value}">${this.contextMenu[i].text}</a>`;
       } else if (this.contextMenu[i].type = "javascript") {
-        item = `<a href="javascript:void(0)" onclick="${this.contextMenu[i].
-    }
+        item = `<a href="javascript:void(0)" onclick="${this.contextMenu[i].value}">${this.contextMenu[i].text}</a>`;
+    } else if (this.contextMenu[i].type = "hr") {
+item = "<hr/>";
+}
   }
+    
 }
