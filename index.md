@@ -1,5 +1,5 @@
 # right-click
->A JavaScript library for creating custom right click menus.  
+A JavaScript library for creating custom right click menus.  
 ![GitHub repo size](https://img.shields.io/github/repo-size/dluxy/right-click?color=blue&label=size)
 ![Finished](https://img.shields.io/badge/finished-no-green)
 ![GitHub top language](https://img.shields.io/github/languages/top/dluxy/right-click?color=red)
