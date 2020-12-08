@@ -9,6 +9,13 @@ class rightClickMenu {
   
     this.consoleDebug = true;
     this.enabled = "custom";
+    this.colors = {
+      lnkBackground: "#ECECEC",
+      menuBackground: "#FFFFFF",
+      menuBorder: "#CCCCCC",
+      itemBorderBottom: "#CCCCCC",
+      lnkHover: "#FFFFFF"
+    };
     this.contextMenu = [
       {
         type:"url",
@@ -48,7 +55,7 @@ this.enabled = "default";
     let menuElmt = document.createElement("div");
     let headElmt = document.getElementsByTagName("head")[0];
     let contextMenuStyles = document.createElement("style");
-    contextMenuStyles.innerHTML = `.cxtMenuLnk{display:block;padding:20px;background-color:}.cxtMenu{position:absolute;display:none;}`;
+    contextMenuStyles.innerHTML = `.cxtMenuLnk{display:block;padding:20px;background-color:${this.colors.lnkBackground}}.cxtMenu{position:absolute;display:none;}.cxtMenu ul{}`;
     menuElmt.style.display = "none";
     for (let i = 0; i < this.contextMenu.length; i++)
     {
