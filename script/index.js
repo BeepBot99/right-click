@@ -48,13 +48,7 @@ this.enabled = "default";
     let menuElmt = document.createElement("div");
     let headElmt = document.getElementsByTagName("head")[0];
     let contextMenuStyles = document.createElement("style");
-    contextMenuStyles.innerHTML = "
-      .cnxtMenuLnk {
-        display: block;
-        padding: 20px;
-        background-color: 
-      }
-    ";
+    contextMenuStyles.innerHTML = `.cxtMenuLnk{display:block;padding:20px;background-color:}.cxtMenu{position:absolute;display:none;}`;
     menuElmt.style.display = "none";
     for (let i = 0; i < this.contextMenu.length; i++)
     {
